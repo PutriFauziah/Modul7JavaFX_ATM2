@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0" prefWidth="435.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_atm.FXMLDocumentController">
+   <children>
+      <Label layoutX="65.0" layoutY="38.0" text="Selamat Datang di Moklet Bank">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="76.0" layoutY="79.0" prefHeight="3.0" prefWidth="287.0" />
+      <Label layoutX="160.0" layoutY="92.0" text="Masukkan Pin Anda">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="Pin" layoutX="105.0" layoutY="121.0" prefHeight="52.0" prefWidth="229.0" />
+      <GridPane layoutX="89.0" layoutY="179.0" prefHeight="302.0" prefWidth="276.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="buttonOk" onAction="#tekanOk" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="OK" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button0" onAction="#tekan0" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="buttonC" onAction="#tekanC" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="C" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button9" onAction="#tekan9" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button8" onAction="#tekan8" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button7" onAction="#tekan7" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button6" onAction="#tekan6" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button5" onAction="#tekan5" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button3" onAction="#tekan3" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button2" onAction="#tekan2" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button1" onAction="#tekan1" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="button4" onAction="#tekan4" prefHeight="44.0" prefWidth="78.0" style="-fx-background-color: aqua;" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
